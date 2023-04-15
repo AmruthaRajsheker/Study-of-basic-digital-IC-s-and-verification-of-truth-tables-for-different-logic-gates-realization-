@@ -6,7 +6,7 @@ To study about the different digital IC’s and to verify the truth table in Qua
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 # Theory
-# Introduction
+Introduction
 Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
 AND gate
@@ -57,16 +57,32 @@ Switch ON the main switch
 Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
 If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
-Program:
+
+# Program:
 /*
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: AMRUTHA RAJSHEKER
+RegisterNumber: 212222110003
+
+module EX01(a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+and (y1,a,b);
+or (y2,a,b);
+not (y3,a);
+xor (y4,a,b);
+xnor (y5,a,b);
+nand (y6,a,b);
+nor (y7,a,b);
+endmodule
+
 */
 # Logic symbol & Truthtable
-RTL realization
-# Output:
+![1](https://user-images.githubusercontent.com/119475943/232207881-a2513bd1-d366-44ea-9224-ea8d5494a70f.png)
+
+# RTL realization Output:
 RTL
+![2](https://user-images.githubusercontent.com/119475943/232207940-3d3c0a97-10a4-4822-b4ef-ad3ecbe38f0a.png)
 
 # Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
